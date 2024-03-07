@@ -19,14 +19,14 @@ jobs:
           password: ${{secrets.DOCKERHUBPASSWORD}} 
 
           
-  Logintodockerhub:
-    runs-on: ubuntu-latest
-    environment: Qa 
-    steps: 
-      - uses: actions/checkout@v3 
-      - name: docker login
-        uses: docker/login-action@v2.1.0 
-        with: 
-          registry: registry-1.docker.io 
-          username: ${{secrets.DOCKERHUBUSERNAME}} 
-          password: ${{secrets.DOCKERHUBPASSWORD}}
+  # Logintodockerhub:
+  #   runs-on: ubuntu-latest
+  #   environment: Qa 
+  #   steps: 
+  #     - uses: actions/checkout@v3 
+  #     - name: docker login
+  #       uses: docker/login-action@v2.1.0 
+  #       with: 
+  #         registry: registry-1.docker.io 
+  #         username: ${{secrets.DOCKERHUBUSERNAME}} 
+  #         password: ${{secrets.DOCKERHUBPASSWORD}}
