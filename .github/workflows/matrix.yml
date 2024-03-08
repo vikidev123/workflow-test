@@ -16,9 +16,9 @@ jobs:
   example_matrix:
     strategy:
       matrix:
-        version: [10]
+        version: [10, 11]
         names: ['test1' ,'test2']
-    if: github.repository == 'Shubham-Bawa/matrix-demo' 
+    if: github.repository == 'vikidev123/workflow-test' 
     runs-on: ubuntu-latest
     env:
       Day: monday
