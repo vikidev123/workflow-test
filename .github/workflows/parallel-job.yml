@@ -79,8 +79,6 @@ jobs:
   #   steps: 
   #     - uses: actions/checkout@v2 
   #     - run: echo "hello Test"
-  [1:54 PM] Kumar, Shubham
-    *********** environment variable *****
 
   example_matrix:
     strategy:
