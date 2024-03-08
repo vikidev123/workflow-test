@@ -1,4 +1,4 @@
-name: CI
+name: parallel-jobs
 
 # Controls when the workflow will run
 
@@ -79,3 +79,23 @@ jobs:
   #   steps: 
   #     - uses: actions/checkout@v2 
   #     - run: echo "hello Test"
+  [1:54 PM] Kumar, Shubham
+    *********** environment variable *****
+
+  example_matrix:
+    strategy:
+      matrix:
+        version: [10]
+        names: ['test1' ,'test2']
+    runs-on: ubuntu-latest
+    env:
+      Day: Friday
+      name: Viki
+    steps:
+      - name: varibles
+        run: echo "my name is $name. Day is $Day refrenece of $GITHUB_REF and $github.event  "
+      - name: matrixa
+        run: echo ${​​{​​matrix.version}​​}​​ 
+      - name: test  
+        run: echo ${​​{​​matrix.names}​​}​​ 
+
