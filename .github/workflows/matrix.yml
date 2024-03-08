@@ -21,8 +21,8 @@ jobs:
     if: github.repository == 'vikidev123/workflow-test' 
     runs-on: ubuntu-latest
     env:
-      Day: monday
-      name: shubham
+      Day: friday
+      name: viki
       company: acccenture
     steps:
       - name: varibles
