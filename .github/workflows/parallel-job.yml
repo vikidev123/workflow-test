@@ -93,7 +93,8 @@ jobs:
       - name: varibles
         run: echo "my name is $name. Day is $Day refrenece of $GITHUB_REF and $github.event  "
       - name: matrixa
-        run: echo ${​​{​​matrix.version}​​}​​ 
+        run: echo ${​​{ ​​matrix.version }​​}​​ 
       - name: test  
-        run: echo ${​​{​​matrix.names}​​}​​ 
+        run: echo ${​​{ ​​matrix.names }​​}​​ 
+        
 
